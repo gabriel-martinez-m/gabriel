@@ -37,6 +37,7 @@ public class IncidenciaController {
             return new ResponseEntity<>("Incidencia eliminada", HttpStatus.OK);
         }
         return new ResponseEntity<>("Incidencia no encontrada", HttpStatus.NOT_FOUND);
+    }
 
     @GetMapping("/total")
     public ResponseEntity<Integer> obtenerTotal() {
